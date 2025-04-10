@@ -3,21 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campeonato Ecuatoriano LigaPro2025</title>
-    <!--Estilos css-->
-    <style>
-        body {
-            background-color: #fdf9a0;
-        }
-    </style>
-</head>
-<body> 
-    <section style="text-align: center;">
-        <header style="background-color: #fffb00;">
-            <h1>Campeonato Ecuatoriano LigaPro2025</h1>
-        </header>
-        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque neque, facere aspernatur alias labore voluptatibus quisquam ex obcaecati velit dicta quos suscipit nihil eveniet possimus assumenda temporibus! Illo, iusto impedit!</article>
-    </select>
+    <title>LigaPro2025</title>
+    <link rel="stylesheet" href="estilos/style.css">
     
+
+</head>
+<body>
+
+    <!-----Video de fondo----->
+
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="videos/LigaPro.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-----Encabezado----->
+    <header>
+        <h1>LigaPro2025</h1>
+        <nav>
+            <ul>
+                <li><a href="#partidos">Partidos</a></li>
+                <li><a href="#calendario">Fechas</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#posiciones">Posiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-----Partidos por disputar----->
+        <section id="partidos">
+            <h2>Partidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Local</th>
+                        <th>Visitante</th>
+                        <th>Estadio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/04/2025</td>
+                        <td>16:00</td>
+                        <td>
+                            <img src="img/BSC.png" alt="Barcelona SC" width="30">
+                            Barcelona Sporting Club</td>
+                        <td>
+                            <img src="img/CSE.png" alt="CS Emelec" width="30">
+                            Club Sport Emelec</td>
+                        <td>Estadio Banco Pichincha</td>
+                    </tr>
+                    <tr>
+                        <td>12/04/2025</td>
+                        <td>18:30</td>
+                        <td>
+                            <img src="img/SDA - copia.png" alt="Aucas" width="30">
+                            Sociedad Deportiva Aucas</td>
+                        <td>
+                            <img src="img/LDU.png" alt="LDU" width="30">
+                            Liga Deportiva Universitaria</td>
+                        <td>Estadio Cooprogreso Gonzalo Pozo Ripalda</td>
+                    </tr>
+                    <tr>
+                        <td>13/04/2025</td>
+                        <td>15:00</td>
+                        <td>
+                            <img src="img/Logotipo-El-Nacional.png" alt="Nacional" width="30">
+                            Club Deportivo El Nacional</td>
+                        <td>
+                            <img src="img/DSC.png" alt="Delfín" width="30">
+                            Delfín Sporting Club</td>
+                        <td>Estadio Olímpico Atahualpa</td>
+                    </tr>
+                    <tr>
+                        <td>13/04/2025</td>
+                        <td>17:00</td>
+                        <td>
+                            <img src="img/DCUENCA.png" alt="Cuenca" width="30">
+                            Club Deportivo Cuenca</td>
+                        <td>
+                            <img src="img/CATOLICA.png" alt="Católica" width="30">
+                            Club Universidad Católica</td>
+                        <td>Banco del Austro Alejandro Serrano Aguilar</td>
+                    </tr>
+                    <tr>
+                        <td>14/04/2025</td>
+                        <td>19:00</td>
+                        <td>
+                            <img src="img/MACARA.png" alt="Macará" width="30">
+                            Club Deportivo Macará</td>
+                        <td>
+                            <img src="img/IDV.png" alt="IDV" width="30">
+                            Club Independiente del Valle</td>
+                        <td>Estadio Universidad Indoamérica Bellavista</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-----Calendario----->
+        <section id="calendario">
+            <h2>Calendario</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Jornada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/04/2025</td><td>Jornada 6</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>19/04/2025</td><td>Jornada 7</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>26/04/2025</td> <td>Jornada 8</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>03/05/2025</td><td>Jornada 9</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>10/05/2025</td><td>Jornada 10</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-----resultados----->
+        <section id="resultados">
+            <h2>Resultados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Local</th>
+                        <th>Marcador</th>
+                        <th>Visitante</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06/04/2025</td>
+                        <td>Barcelona SC</td>
+                        <td>0-0</td>
+                        <td>Club Sport Emelec</td>
+                        <td>Finalizado</td>
+                    </tr>
+                    <tr>
+                        <td>06/04/2025</td>
+                        <td>Aucas</td>
+                        <td>0-2</td>
+                        <td>LDU Quito</td>
+                        <td>Finalizado</td>
+                    </tr>
+                    <tr>
+                        <td>07/04/2025</td>
+                        <td>El Nacional</td>
+                        <td>1-0</td>
+                        <td>Delfín</td>
+                        <td>Finalizado</td>
+                    </tr>
+                    <tr>
+                        <td>07/04/2025</td>
+                        <td>Dep.Cuenca</td>
+                        <td>1-2</td>
+                        <td>Club Universidad Católica</td>
+                        <td>Finalizado</td>
+                    </tr>
+                    <tr>
+                        <td>08/04/2025</td>
+                        <td>Macará</td>
+                        <td>4-0</td>
+                        <td>Club Independiente del Valle</td>
+                        <td>Finalizado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-----Tabla de posiciones----->
+        <section id="posiciones">
+            <h2>Tabla de Posiciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="img/vinotintoA - copia.png" 
+                            alt="" width="17" height="17">
+                            Vinotinto
+                            
+                        </td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/BSC.png" 
+                            alt="" width="17" height="17">
+                            Barcelona SC</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/CATOLICA.png" 
+                            alt="" width="17" height="17">
+                            U.Católica</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>12</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="img/IDV.png" 
+                            alt="" width="17" height="17">
+                            I.Valle</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/LDU.png" 
+                            alt="" width="17" height="17">
+                            LDU Quito</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>11</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/libertad.png" 
+                            alt="" width="17" height="17">
+                            Libertad FC</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>11</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/ORENSE - copia.png" 
+                            alt="" width="17" height="17">
+                            Orense</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/mushuc2 - copia.png" 
+                            alt="" width="17" height="17">
+                            Mushuc Runa</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/SDA - copia.png" 
+                            alt="" width="17" height="17">
+                            Aucas</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/MACARA.png" 
+                            alt="" width="17" height="17">
+                            Macará</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/DCUENCA.png" 
+                            alt="" width="17" height="17">
+                            Dep.Cuenca</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/manta - copia.png" 
+                            alt="" width="17" height="17">
+                            Manta</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/TUNIVERSITARIO - copia.png" 
+                            alt="" width="17" height="17">
+                            T.Universitario</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/CSE.png" 
+                            alt="" width="17" height="17">
+                            Emelec</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/DSC.png" 
+                            alt="" width="17" height="17">
+                            Delfín</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/Logotipo-El-Nacional.png" 
+                            alt="" width="17" height="17">
+                            El Nacional</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
